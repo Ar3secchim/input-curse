@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root{
+  --color-primary: hsl(280, 100%, 25%);
+  --color-second: hsl(20, 100%, 50%);
+  --color-text:hsl(60, 65%, 85%);
+
+  --font-primary: 'Rajdhani'
+  --font-foco: 'Days One'
+}
+
+html{
+  background-color: rgba(23, 29, 36, 1);
+  color: var(--color-text);
+}
+
+ul{
+  list-style: none;
+}
+main .destaque{
+  display: flex;
+  align-items: center;
+  margin: 4rem;
+  padding: 2rem;
+  justify-content: space-around;
+  gap: 5rem;
+
+  box-shadow: inset 0px 10px 25px rgba(0, 0, 0, 0.221);
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.104));
+  backdrop-filter: blur(50px);
+  border-radius: 1rem;
+}
+
+main .destaque h1{
+  font-family: 'Days One';
+  font-weight: 100;
+  font-size: 2.5rem;
+  margin-top:0;
+}
+
+main .destaque p{
+  font-family: 'Rajdhani';
+  font-size: 1.2rem;
+  margin-top: 1rem ;
+}
+
+main .info{
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+
+  list-style: none;
+}
+
+main .info h1{
+  font-family: 'Days One';
+  font-weight: 100;
+  font-size: 2.5rem;
+  margin-top:0;
+}
+
+main .info li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem ;
+  text-decoration: none;
+}
+
+main .info a:link, a:visited, a:hover, a:active{
+  color: var(--color-text);
+}
