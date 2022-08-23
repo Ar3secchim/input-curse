@@ -7,29 +7,63 @@
   <title>Copa do mundo 2022</title>
 
   <link rel="icon" type="image/svg" href="/">
+  <link rel="stylesheet" href="/reset.css">
 
   <style>
     *{
       margin: 0;
     }
+    html{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-color: rgb(37, 7, 51);
+    }
+
+    h1,h2{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration:underline;
+      margin: 2rem 0rem 0rem 1rem;
+      color: beige;
+    }
+
     .content-table{
       margin: 2.5rem 1rem;
       font-size: 1.5rem;
       min-width: 50rem;
     }
 
-    .content-table tbody td:nth-child(2n){
-      text-align: center;
-    }
-
     .content-table thead tr{
       background-color: rgba(111, 61, 61, 0.666);
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .content-table thead th{
+     line-height: 4rem;
+     color: aliceblue;
+    }
+
+    .content-table tbody td:nth-child(n+2):nth-child(-n+10){
+      text-align: center;
     }
 
     .content-table tbody tr{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      vertical-align: middle;
+    }
+    .content-table tbody td{
+      vertical-align: middle;
+    }
+
+    .content-table tbody td:nth-child(1){
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-left: 1rem;
     }
 
     .content-table tbody .espanha{
@@ -49,14 +83,14 @@
   </style>
 </head>
 <body>
+  <h1 >Copa do mundo</h1>
+  <h2> Grupo E</h2>
   <table class="content-table">
-    <h1 >Copa do mundo</h1>
-
     <thead>
       <tr>
         <th>Equipe</th>
-        <th>Pts</th>
-        <th>Pj</th>
+        <th>PTS</th>
+        <th>PJ</th>
         <th>VIT</th>
         <th>E</th>
         <th>DER</th>
@@ -68,7 +102,7 @@
 
     <tbody>
       <tr class="espanha">
-        <td>1.ESPANHA</td>
+        <td> 1 <img src="https://ssl.gstatic.com/onebox/media/sports/logos/5hLkf7KFHhmpaiOJQv8LmA_48x48.png"> Espanha</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -79,7 +113,7 @@
         <td>0</td>
       </tr>
       <tr class="costa-rica">
-        <td>2.COSTA RICA</td>
+        <td>2 <img src="https://ssl.gstatic.com/onebox/media/sports/logos/ixZiM5pj2IvvYc15k-zfeQ_48x48.png"> RICA</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -90,7 +124,7 @@
         <td>0</td>
       </tr>
       <tr class="alemanha">
-        <td>3.ALEMANHA</td>
+        <td>3 <img src="https://ssl.gstatic.com/onebox/media/sports/logos/h1FhPLmDg9AHXzhygqvVPg_48x48.png">ALEMANHA</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -101,7 +135,7 @@
         <td>0</td>
       </tr>
       <tr class="japao">
-        <td>4.JAPÃO</td>
+        <td>4 <img src="https://ssl.gstatic.com/onebox/media/sports/logos/by4OltvtZz7taxuQtkiP3A_48x48.png">JAPÃO</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -112,6 +146,7 @@
         <td>0</td>
       </tr>
     </tbody>
+
   </table>
 </body>
 </html>
