@@ -1,0 +1,40 @@
+@import url(/reset.css);
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  height: 95vh;
+}
+
+aside{
+  background-color: rgb(71, 71, 105);
+  padding: 1.6rem;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: bisque;
+}
+
+nav{
+  background-color: rgb(187, 245, 245);
+  padding:1.6rem;
+}
+
+article{
+  flex: 2;
+  background-color: rgb(254, 104, 104);
+  padding:1.6rem;
+}
+
+footer{
+  background-color: rgb(191, 122, 255);
+  padding:1.6rem;
+  height: 5%;
+}
