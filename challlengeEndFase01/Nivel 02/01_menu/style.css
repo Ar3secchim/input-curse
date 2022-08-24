@@ -1,0 +1,71 @@
+@import url(/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+body{
+  display: grid;
+  grid-template-areas: "nav main";
+}
+
+nav{
+  width: 25.6rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.1rem solid rgba(214, 212, 226, 1);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.2rem;
+}
+
+.perfil{
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.6rem 0rem 1.6rem 2.4rem;
+
+  border-top: 0.1rem solid rgba(214, 212, 226, 1);
+  border-bottom: 0.1rem solid rgba(214, 212, 226, 1);
+}
+.perfil ul{
+  height: 4rem;
+}
+
+.perfil :nth-child(1){
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color:#18161F ;
+}
+.perfil :nth-child(2){
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #787491;
+}
+
+.menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+
+  padding: 4rem 0rem 0rem 3.6rem ;
+
+  font-family: 'Space Grotesk';
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color:#18161F ;
+}
+
+.menu ul li{
+  display: flex;
+  align-items: center;
+  gap:2.8rem ;
+}
