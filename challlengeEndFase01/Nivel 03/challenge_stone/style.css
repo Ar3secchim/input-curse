@@ -1,0 +1,103 @@
+@import url(stylleguide.css);
+
+nav{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2.4rem 4.0rem;
+  align-items: center;
+}
+
+nav .container{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+nav .container span{
+  color: var(--brand-dark-primary);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+header img{
+  width: 100vw;
+}
+
+header .headline{
+  position: absolute;
+  margin-left: 4rem ;
+  width: 45rem;
+
+  z-index: 2;
+  top: 25rem;
+}
+
+header .headline p{
+  margin-top: 0.8rem;
+}
+
+header .headline button{
+  margin-top: 2.4rem;
+}
+
+main .sectionContainer{
+  width: 100vw;
+  height:67rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+main .sectionHeadline{
+  width: 33.8rem;
+  margin-right: 5.8rem;
+}
+
+main .sectionHeadline:nth-child(1){
+  color: hsla(210, 14%, 15%, 1);
+}
+
+main .sectionHeadline :nth-child(2){
+  color: hsl(157, 100%, 33%);
+}
+
+main .sectionHeadline :nth-child(3){
+  width: 31.4rem;
+  margin-top: 1rem;
+  color: hsla(210, 14%, 15%, 1);
+}
+
+main .sectionHeadline button{
+  margin-top: 2.4rem;
+}
+
+main img{
+  width: 45.8rem;
+}
+
+#background{
+  background-color:var(--brand-ligth-secondary) ;
+}
+
+#background2{
+  background-color:var(--brand-ligth-primary) ;
+}
+
+main .sectionHeadline2{
+  width: 47.3rem;
+  margin-left: 5.8rem;
+}
+
+main .sectionHeadline2 #overline{
+  margin-bottom: 1rem;
+  color:var(--brand-green-principal);
+}
+
+main .sectionHeadline2 a{
+  display: block;
+
+  margin-top: 1.8rem;
+}
