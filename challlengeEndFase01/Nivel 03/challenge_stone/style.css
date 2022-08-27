@@ -31,6 +31,7 @@ header .headline{
 
   z-index: 2;
   top: 25rem;
+  color: var(--brand-ligth-primary);
 }
 
 header .headline p{
@@ -49,11 +50,12 @@ main .sectionContainer{
   align-items: center;
   justify-content: center;
 
+  gap: 4.2rem;
+
 }
 
 main .sectionHeadline{
   width: 33.8rem;
-  margin-right: 5.8rem;
 }
 
 main .sectionHeadline:nth-child(1){
@@ -69,6 +71,7 @@ main .sectionHeadline :nth-child(3){
   margin-top: 1rem;
   color: hsla(210, 14%, 15%, 1);
 }
+
 
 main .sectionHeadline button{
   margin-top: 2.4rem;
@@ -88,7 +91,6 @@ main img{
 
 main .sectionHeadline2{
   width: 47.3rem;
-  margin-left: 5.8rem;
 }
 
 main .sectionHeadline2 #overline{
@@ -100,4 +102,86 @@ main .sectionHeadline2 a{
   display: block;
 
   margin-top: 1.8rem;
+}
+
+main .sectionHeadline2 #body-1{
+  margin-top: 1rem;
+}
+
+.containerStore{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.8rem;
+}
+
+.containerStore img{
+  width: 12rem;
+}
+
+.containerInfo{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.containerInfo img{
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.containerInfo .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 33.6rem;
+
+  background-color: var(--brand-ligth-tertiary);
+}
+
+.containerInfo .container h2{
+  width: 77rem;
+}
+
+.styleGreen{
+  color: var(--brand-green-principal);
+}
+
+.containerInfo .container div{
+  display: flex;
+  justify-content: center;
+  margin-top:2.4rem ;
+  gap: 1.6rem;
+}
+
+.containerInfo .containerOpen{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 29.6rem;
+  width: 100vw;
+
+  background-color: var(--brand-dark-secondary);
+}
+
+.containerInfo .containerOpen li{
+  color:var(--brand-ligth-primary) ;
+  padding-top: 0.4rem;
+}
+
+footer{
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  background-color: var(--brand-dark-primary);
+}
+
+footer span{
+  padding-left: 3.2rem;
 }

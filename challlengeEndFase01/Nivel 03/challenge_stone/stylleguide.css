@@ -1,5 +1,10 @@
 @import url(/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,600;0,700;1,400&display=swap');
+
+html{
+  overflow-x: hidden;
+}
+
 :root{
   font-family: 'Noto Sans';
 /* colors  */
@@ -44,7 +49,7 @@
 
 #subtitle-2{
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 2.8rem;
   color: var(--brand-ligth-primary);
 }
