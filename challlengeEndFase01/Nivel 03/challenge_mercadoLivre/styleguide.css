@@ -1,0 +1,84 @@
+@import url(/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap');
+
+:root{
+  --color-blue-primary-1:hsl(198, 100%, 45%);
+  --color-blue-primary-2:hsl(198, 100%, 35%);
+  --color-blue-primary-3:hsl(199, 100%, 27%);
+
+  --color-blue-secondary-1:hsla(204, 60%, 55%, 0.15);
+  --color-blue-secondary-2:hsla(204, 60%, 55%, 0.3);
+  --color-blue-secondary-3:hsla(204, 60%, 55%, 0.45);
+
+  --color-dark:hsl(0, 0%, 0%);
+  --color-dark-2:hsl(0, 0%, 20%);
+  --color-dark-light:hsl(0, 0%, 40%);
+
+  --color-ligth:hsl(0, 0%, 100%);
+  --color-ligth-2:hsl(0, 0%, 96%);
+  --color-light-3:hsl(0, 0%, 90%);
+}
+
+body{
+
+  font-family: 'Raleway', sans-serif;
+}
+
+#headline-h1{
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.4rem;
+}
+
+#headline-h2{
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.05%;
+}
+
+#subtitle{
+  font-weight: 600;
+  font-size: 2rem;
+  list-style: 2.4rem;
+}
+
+
+#body{
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+#button-1{
+  background:var(--color-blue-primary-1);
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  list-style: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem 2.4rem;
+}
+
+#button-2{
+  font-weight: 400;
+  font-size: 1.6rem;
+  list-style: 2rem;
+}
+
+#button-3{
+  font-weight: 400;
+  font-size: 1.6rem;
+  list-style: 2rem;
+
+  border-radius: 0.4rem;
+  background-color: #e5e5e5;
+  border: none;
+  padding: 0.8rem;
+  color: #666666;
+}

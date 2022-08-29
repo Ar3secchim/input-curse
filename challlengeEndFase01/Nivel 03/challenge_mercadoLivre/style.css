@@ -1,0 +1,142 @@
+@import url(styleguide.css);
+
+nav{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1.4rem 3.2rem;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap:6.4rem;
+}
+
+nav ul li #button{
+  color: var(--color-blue-primary-1);
+  background:var(--color-blue-secondary-1);
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  list-style: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.4rem;
+  gap: 1rem;
+}
+
+nav ul li #button-1{
+  color: var(--color-ligth);
+}
+
+nav ul :nth-child(5){
+  padding: 1rem 2rem;
+  border-left: .1rem solid var(--color-dark-2);
+}
+
+header .containerH3{
+  background-color: var(--color-ligth-2);
+  padding: 1.3rem;
+  text-align: center;
+}
+
+header div #imgPrincipal{
+  width: 1280px;
+  height: 48rem;
+}
+
+header .containerHeadline{
+  position: absolute;
+  top: 25rem;
+  padding-left: 12rem;
+}
+
+header .containerHeadline h1{
+  width: 33.6rem;
+  color: var(--color-ligth);
+  font-size: 5rem;
+}
+
+header .containerHeadline p{
+  padding-top: 1.6rem;
+  color: var(--color-ligth);
+}
+
+header .containerHeadline form{
+  background-color: var(--color-ligth);
+  padding: 1.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  width: 37rem;
+
+  border-radius: 0.4rem;
+  margin-top:0.8rem;
+}
+
+header .containerHeadline .input{
+  border: none;
+  border-bottom: 0.2rem solid #b1b1b1;
+}
+main{
+  background-color: var(--color-ligth-2)
+}
+
+main .container{
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: 2.8rem;
+
+  position: relative;
+  top: -8rem;;
+}
+
+main .card{
+  width: 51rem;
+  height: 26.6rem;
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--color-ligth);
+  border-radius: 0.8rem;
+  border: 0.2rem solid #E5E5E5;
+
+  padding: 2.4rem;
+  gap: 2.4rem;
+}
+
+main .card span h2{
+  padding-bottom: 1rem;
+}
+
+main .card span p{
+  padding-bottom: 1rem;
+}
+
+main .card #button-1{
+  color: var(--color-ligth);
+}
+
+footer{
+  height: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  background-color: var(--color-ligth);
+}
+
+footer span{
+  padding-left: 3.2rem;
+}
+
+footer span svg path{
+  fill: #333333;
+}
