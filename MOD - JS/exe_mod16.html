@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Mod 16</title>
+
+</head>
+<body>
+
+<script>
+  //--------------------------------- iten 1----------------------
+  // console.log("Exercise 01")
+  // with arrow function
+  const soma = (n1,n2,n3) => {return (n1 + n2) * n3}
+  const result = soma(10,2,3)
+
+  // console.log(`Resultado da execução é ${result} `)
+
+  // --------------------------item 2'-------------------------
+  // console.log("Exercise 02")
+  function problem (n1,n2,n3,n4){
+    return (n1 + n2 + n3 + n4)
+  }
+
+  const resultProblem = (problem(5,5,5,5)*3)
+
+  // console.log(resultProblem)
+
+  // with arrow function
+  const problemSoma = (n1,n2,n3,n4) => {return (n1 + n2 + n3 + n4)}
+
+  const resultProblem02 = (problem(10,10,10,10)*3)
+
+  // console.log(resultProblem02)
+
+  // --------------------iten 3-------------------------------
+  console.log("Exercise 03")
+
+  function error(n1, n2, n3){
+    return ((n1 + n2 + n3) * 4)
+  }
+  const resultError = error(11,6)
+
+  if(Number.isNaN(resultError) === true){
+    console.log("Os valores não foram preenchidos corretamente!")
+  }else{
+    console.log(resultError)
+  }
+
+  // ------------------iten 4---------------------------------
+  // console.log("Exercise 04")
+
+  function createPerson (name, age){
+    return {
+      name,
+      age,
+      years : 2022 - age
+    }
+  }
+
+  function persona(createPerson){
+    let person = createPerson('Renara', 25)
+    console.log(`${person.name} tem ${person.age} pois nasceu em ${person.years}`)
+  }
+
+// persona(createPerson)
+
+
+</script>
+</body>
+</html>
