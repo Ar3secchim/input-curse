@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array </title>
+  <script>
+
+    /*
+    ADD ITEM A LIST
+    lista.push()
+    list.unshift()
+    -When I add something the return is the new list
+
+    REMOVE ITEM A LIST
+    list.pop()
+    list.shift()
+    -when you remove something the return is the item removed
+    */
+    console.log("Exercise 01")
+    let listNumber =[1,2,3,4,5,6,7]
+
+    const novoArr = listNumber.forEach(number => {
+      if(number % 2 === 0){
+        console.log(`O ${number} é par`)
+      }else{
+        console.log(`O ${number} é impar`)
+      }
+    })
+
+    console.log("Exercise 02")
+
+    const pair = listNumber.filter((number) =>{
+      if(number % 2 === 0){
+        return true
+      }else{
+        return false
+      }
+    })
+
+    const odd = listNumber.filter((number) =>{
+      if(number % 2 === 1){
+        return true
+      }else{
+        return false
+      }
+    })
+
+    // console.log(pair, odd)
+
+    console.log("Exercise 03")
+
+    let pairDouble = pair.map(function(number){
+      return number * 2
+    })
+
+    let oddDouble = odd.map(function(number){
+      return number * 3
+    })
+
+    // console.log(pairDouble, oddDouble)
+
+  console.log("Exercise 04")
+
+
+  console.log("Exercise 05")
+
+  const listNumberinitial = 0
+
+  listNumber.reduce(somaNumber, 0)
+  
+  </script>
+</head>
+<body>
+
+</body>
+</html>

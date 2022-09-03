@@ -11,62 +11,60 @@
 
 <script>
   //--------------------------------- iten 1----------------------
-  // console.log("Exercise 01")
-  // with arrow function
+  console.log("Exercise 01")
+
   const soma = (n1,n2,n3) => {return (n1 + n2) * n3}
   const result = soma(10,2,3)
 
-  // console.log(`Resultado da execução é ${result} `)
+  console.log(`Resultado da execução é ${result} `)
 
   // --------------------------item 2'-------------------------
-  // console.log("Exercise 02")
+  console.log("Exercise 02")
+
   function problem (n1,n2,n3,n4){
     return (n1 + n2 + n3 + n4)
   }
 
-  const resultProblem = (problem(5,5,5,5)*3)
+  const resultProblem = (problem(10,10,10,10)*3)
 
-  // console.log(resultProblem)
+  console.log(resultProblem)
 
   // with arrow function
   const problemSoma = (n1,n2,n3,n4) => {return (n1 + n2 + n3 + n4)}
 
   const resultProblem02 = (problem(10,10,10,10)*3)
 
-  // console.log(resultProblem02)
+  console.log(resultProblem02)
 
   // --------------------iten 3-------------------------------
   console.log("Exercise 03")
 
-  function error(n1, n2, n3){
-    return ((n1 + n2 + n3) * 4)
-  }
-  const resultError = error(11,6)
-
-  if(Number.isNaN(resultError) === true){
-    console.log("Os valores não foram preenchidos corretamente!")
-  }else{
-    console.log(resultError)
-  }
-
-  // ------------------iten 4---------------------------------
-  // console.log("Exercise 04")
-
-  function createPerson (name, age){
-    return {
-      name,
-      age,
-      years : 2022 - age
+  function resultError (n1, n2, n3){
+    if(n1 == null || n2 == null || n3 == null){
+      console.log("Os valores não foram preenchidos corretamente!")
+    }else{
+      console.log((n1 + n2 + n3) * 4)
     }
   }
 
-  function persona(createPerson){
-    let person = createPerson('Renara', 25)
-    console.log(`${person.name} tem ${person.age} pois nasceu em ${person.years}`)
+  resultError(1)
+
+  // ------------------iten 4---------------------------------
+  console.log("Exercise 04")
+
+  let createPerson = function (name, age){
+    return {
+      name:name,
+      age : age,
+      dateBirth : 2022 - age
+    }
   }
 
-// persona(createPerson)
+  function person(createPerson){
+    console.log(`${createPerson.name} tem ${createPerson.age} pois nasceu em ${createPerson.dateBirth}`)
+  }
 
+  person(createPerson('renara' ,25))
 
 </script>
 </body>
