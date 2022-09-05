@@ -18,7 +18,8 @@
     list.shift()
     -when you remove something the return is the item removed
     */
-    console.log("Exercise 01")
+
+  console.log("Exercise 01")
     let listNumber =[1,2,3,4,5,6,7]
 
     const novoArr = listNumber.forEach(number => {
@@ -29,27 +30,19 @@
       }
     })
 
-    console.log("Exercise 02")
+  console.log("Exercise 02")
 
-    const pair = listNumber.filter((number) =>{
-      if(number % 2 === 0){
-        return true
-      }else{
-        return false
-      }
+    const pair = listNumber.filter(number =>{
+      return number % 2 === 0 ? true : false
     })
 
     const odd = listNumber.filter((number) =>{
-      if(number % 2 === 1){
-        return true
-      }else{
-        return false
-      }
+      return number % 2 === 1 ? true : false
     })
 
-    // console.log(pair, odd)
+    console.log(pair, odd)
 
-    console.log("Exercise 03")
+  console.log("Exercise 03")
 
     let pairDouble = pair.map(function(number){
       return number * 2
@@ -59,17 +52,39 @@
       return number * 3
     })
 
-    // console.log(pairDouble, oddDouble)
+    console.log(pairDouble, oddDouble)
 
   console.log("Exercise 04")
+
+  let listNumber2 = [0,2,3,9,8,6,5]
+// callback nada mais é que receber uma função como parametro
+  function forEach(callback){
+    for (let i = 0; i < listNumber2.length; i++) {
+      callback(listNumber2[i])
+    }
+  }
+
+  forEach((item) =>{
+    if(item % 2 === 0){
+      console.log(`O número ${item} é par` )
+    }else{
+      console.log(`O número ${item} é impar` )
+    }
+  })
 
 
   console.log("Exercise 05")
 
-  const listNumberinitial = 0
+  console.log("Exercise 06")
 
-  listNumber.reduce(somaNumber, 0)
-  
+    const name = "renara"
+    const nameCrip = name.length
+
+    let alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","z"]
+
+
+    // console.log(nameCrip)
+
   </script>
 </head>
 <body>
