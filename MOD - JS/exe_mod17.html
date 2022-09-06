@@ -44,23 +44,18 @@
 
   console.log("Exercise 03")
 
-    let pairDouble = pair.map(function(number){
-      return number * 2
-    })
+    let pairDouble = pair.map(number => {return number * 2})
 
-    let oddDouble = odd.map(function(number){
-      return number * 3
-    })
+    let oddDouble = odd.map(number => {return number * 3})
 
     console.log(pairDouble, oddDouble)
 
   console.log("Exercise 04")
 
-  let listNumber2 = [0,2,3,9,8,6,5]
 // callback nada mais é que receber uma função como parametro
   function forEach(callback){
-    for (let i = 0; i < listNumber2.length; i++) {
-      callback(listNumber2[i])
+    for (let i = 0; i < listNumber.length; i++) {
+      callback(listNumber[i])
     }
   }
 
@@ -75,15 +70,51 @@
 
   console.log("Exercise 05")
 
+    function reducePair(a,b){
+      return a + b
+    }
+    function reduceOdd(a,b){
+      return a * b
+    }
+
+    const somaPairOdd = pair.reduce(reducePair) + odd.reduce(reduceOdd)
+
+    console.log(somaPairOdd)
+
   console.log("Exercise 06")
+  // return do tamenho do deslocamento
+  let nameLength = (name) => {return name.length}
 
-    const name = "renara"
-    const nameCrip = name.length
+  let alphabet = [
+    {letra: "a", position: 1},
+    {letra: "b", position: 2} ,
+    {letra: "c", position: 3},
+    {letra: "d", position: 4},
+    {letra: "e", position: 5},
+    {letra: "f", position: 6},
+    {letra: "g", position: 7},
+    {letra: "h", position: 8},
+    {letra: "i", position: 9},
+    {letra: "j", position: 10},
+    {letra: "k", position: 11},
+    {letra: "l", position: 12},
+    {letra: "m", position: 13},
+    {letra: "n", position: 14},
+    {letra: "o", position: 15},
+    {letra: "p", position: 16},
+    {letra: "q", position: 17},
+    {letra: "r", position: 18},
+    {letra: "s", position: 19},
+    {letra: "t", position: 20},
+    {letra: "u", position: 21},
+    {letra: "v", position: 22},
+    {letra: "x", position: 23},
+    {letra: "y", position: 24},
+    {letra: "w", position: 25},
+    {letra: "z", position: 26}
+  ]
 
-    let alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","z"]
-
-
-    // console.log(nameCrip)
+  console.log(alphabet[1].letra)
 
   </script>
 </head>
