@@ -54,6 +54,7 @@
 // ----------------------------------------exercise 04 -------------------------------------
   console.log("Exercise 04")
 
+// callback nada mais é que receber uma função como parametro
   function forEach(callback){
     for (let i = 0; i < listNumber.length; i++) {
       callback(listNumber[i])
@@ -89,26 +90,17 @@
 // ----------------------------------------exercise 06 -------------------------------------
   console.log("Exercise 06")
 
+    let alphabet =["A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"]
+
     function cesarCipher(string){
-      let cripto =""
-
-      string = string.toUpperCase()
-
+      // console.log(alphabet.charCodeAt(i))
       for(var i = 0; i < string.length; i++){ //Go through each character in the string
-        let strCode = string[i].charCodeAt() //
-        //
-        if (strCode >= 65 && strCode <= 90){ // se
-          cripto += String.fromCharCode(strCode + string.length)
-        }else if(strCode >= 90){
-          cripto += String.fromCharCode(strCode + string.length)
-        }else{
-          cripto += string[0]
-        }
-      }
-    return cripto
+        let str = string.charAt(i)
+    }
     }
 
-    console.log(cesarCipher("renara"))
+    const result = cesarCipher("Renara")
+    console.log(result)
   </script>
 </head>
 <body>
