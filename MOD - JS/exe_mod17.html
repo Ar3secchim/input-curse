@@ -93,14 +93,21 @@
     let alphabet =["A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"]
 
     function cesarCipher(string){
-      // console.log(alphabet.charCodeAt(i))
+      let cripto ="" //return also
+      string = string.toUpperCase() //tranfosrmar todas as letras em maisculas
+
       for(var i = 0; i < string.length; i++){ //Go through each character in the string
-        let str = string.charAt(i)
-    }
+        let strCode = string[i].charCodeAt() //descobrir o codigo ASCII da letra
+
+        if (strCode >= 65 && strCode <= 90){ //restriguir a leitura do code
+          cripto += String.fromCharCode(((strCode - 65 + string.length) % 26) + 65)
+          //                          (codeLetra - 1letraDoCode + Deslocamento) % tamanho do alfabeto) + 1letraDoCode
+        }
+      }
+    return cripto
     }
 
-    const result = cesarCipher("Renara")
-    console.log(result)
+    console.log(cesarCipher("anelise"))
   </script>
 </head>
 <body>
