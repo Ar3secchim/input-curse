@@ -90,24 +90,26 @@
 // ----------------------------------------exercise 06 -------------------------------------
   console.log("Exercise 06")
 
-    let alphabet =["A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"]
+    // A  B  C  D  E  F  G  H  I  J  K   L   M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z
+    // 0  1  2  3  4  5  6  7  8  9  10  11 12 13 14  15 16 17 18 19 20 21 22 23 24 25
 
     function cesarCipher(string){
-      let cripto ="" //return also
+      let cripto ="" //return also  
       string = string.toUpperCase() //tranfosrmar todas as letras em maisculas
 
       for(var i = 0; i < string.length; i++){ //Go through each character in the string
-        let strCode = string[i].charCodeAt() //descobrir o codigo ASCII da letra
+        let strCode = string[i].charCodeAt() //find the ASCII code of the letter
 
-        if (strCode >= 65 && strCode <= 90){ //restriguir a leitura do code
-          cripto += String.fromCharCode(((strCode - 65 + string.length) % 26) + 65)
-          //                          (codeLetra - 1letraDoCode + Deslocamento) % tamanho do alfabeto) + 1letraDoCode
+        if (strCode >= 65 && strCode <= 90){ //constrain code loop
+          cripto += String.fromCharCode(((strCode - 65 + string.length) % 26) + 65) //returns a string created using a specific sequence of Unicode values.
+          //  addition atr            (((codeLetterASC - 1letterCode + displacement) % alphabet size) + 1letterCode)
+          //                  turns the alphabet into code from 0 to 25    (loop in alphabet)  (turns the letter in code ASCII)
         }
       }
     return cripto
     }
 
-    console.log(cesarCipher("anelise"))
+    console.log(cesarCipher("renara"))
   </script>
 </head>
 <body>
