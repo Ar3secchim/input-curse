@@ -30,6 +30,7 @@
         console.log(`O ${number} é impar`)
       }
     })
+
 // ----------------------------------------exercise 02 -------------------------------------
   console.log("Exercise 02")
 
@@ -54,7 +55,7 @@
 // ----------------------------------------exercise 04 -------------------------------------
   console.log("Exercise 04")
 
-// callback nada mais é que receber uma função como parametro
+//callback is nothing more than receiving a function as a parameter
   function forEach(callback){
     for (let i = 0; i < listNumber.length; i++) {
       callback(listNumber[i])
@@ -94,8 +95,8 @@
     // 0  1  2  3  4  5  6  7  8  9  10  11 12 13 14  15 16 17 18 19 20 21 22 23 24 25
 
     function cesarCipher(string){
-      let cripto ="" //return also  
-      string = string.toUpperCase() //tranfosrmar todas as letras em maisculas
+      let cripto ="" //return also
+      string = string.toUpperCase() //convert all letters to uppercase
 
       for(var i = 0; i < string.length; i++){ //Go through each character in the string
         let strCode = string[i].charCodeAt() //find the ASCII code of the letter
