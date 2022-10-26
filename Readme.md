@@ -1,26 +1,27 @@
 
-# ![logo](/challlengeEndFase01/Nivel%2002/04_HeroInput/src/logo.svg) **Input course project**
->CodarMe - [BrunoBertolini](https://www.instagram.com/codar.me/)
+# **Projetos do Curso Input**
 
-![challenge01](/src/Desktop%20-%201.png)  ![challengeEnd08](/src/challengeEnd_08.png) ![challengeEnd08_mobile](/src/challengeEnd_08_mobile.png)
+CodarMe - [BrunoBertolini](https://www.instagram.com/codar.me/)
 
-# *About this project*
+![challenge01](/src/Desktop%20-%201.png)
+![challengeEnd08](/src/challende8-1.png)
+
+# **Sobre o projeto**
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-- The idea was of a place where I share the activities developed in the course and so I can use it for my portfolio and show my evolution as a Web developer.
-- I'm still taking the course so this repository is under construction
-- ✨Magic ✨
+- A ideia era de um lugar onde eu compartilhasse as atividades desenvolvidas no curso e assim pudesse usar para meu portfólio e mostrar minha evolução como desenvolvedor Web.
+- Ainda estou fazendo o curso então este repositório está em construção
 
-# Why
+# **Por quê**
 
->This project is part of my portfolio, I will be happy to receive feedback on the project, on the codes, structure or anything that helps me evolve to become a better developer
+>Este projeto faz parte do meu portfólio, ficarei feliz em receber feedback sobre o projeto, sobre os códigos, estrutura ou qualquer coisa que me ajude a evoluir para me tornar um desenvolvedor melhor
 
 Email: renarasecchim@hotmail.com
 
-connect with me on [Linkedin](https://www.linkedin.com/in/renarasecchim/)
+Conecte-se comigo [Linkedin](https://www.linkedin.com/in/renarasecchim/)
 
 # Tech
 
-- HTML5 - HTML structure!
-- CSS3- for style and design
+- HTML5 - HTML estrutura!
+- CSS3- para o estilo e design
