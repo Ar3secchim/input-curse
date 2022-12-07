@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise Mod 15</title>
-
-  <script>
 
     // iten 1
 
@@ -76,10 +67,3 @@
     default:
     console.log(`O ${vehicle.model}  é um veículo de mais de 6 rodas da marca ${vehicle.brand}.`)
     }
-  </script>
-</head>
-
-<body>
-
-</body>
-</html>

@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Array </title>
-  <script>
 
     /*
     ADD ITEM A LIST
@@ -111,9 +103,26 @@
     }
 
     console.log(cesarCipher("renara"))
-  </script>
-</head>
-<body>
 
-</body>
-</html>
+
+
+
+//TODO: Implemente um método que calcule o somatório de um número usando recursividade:
+
+let A = 1
+let B = 2
+
+//TODO: Imprima se os valores numéricos passados são iguais ou não.
+let number = 7
+
+function search (number){
+
+  let elementos = [64, 137, -16, 43, 67, 81, -90, 212, 10, 75];
+
+  if(elementos.indexOf(number)>=0)
+  return `Achei ${number} na posicao `+ elementos.indexOf(number)
+ else
+  return `Numero ${number} nao encontrado!`
+}
+
+console.log(search(number))
